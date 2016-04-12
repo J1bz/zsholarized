@@ -1,0 +1,116 @@
+# /etc/dir_colors or ~/.dir_colors
+# Inspired by :
+#   - http://formation-debian.via.ecp.fr/fichiers-config/dir_colors
+#   - http://ethanschoonover.com/solarized colors
+#   - https://github.com/seebi/dircolors-solarized codes translation
+
+# Each color code looks like TT;38;5;CCC, where
+# - TT, type, can be:
+#   00=normal 01=bold 04=underscore 05=blink 07=reverse char/background
+#   08=concealed (?)
+# - CCC, character color, should be solarized colors :
+#   38;5;244 : base0
+#   38;5;245 : base1
+#   38;5;254 : base2
+#   38;5;230 : base3
+#   38;5;136 : yellow
+#   38;5;166 : orange
+#   38;5;160 : red
+#   38;5;125 : magenta
+#   38;5;61  : violet
+#   38;5;33  : blue
+#   38;5;37  : cyan
+#   38;5;64  : green
+
+# Default global color
+NORMAL 00;38;5;244
+# Default file color
+FILE 00;38;5;244
+# Default directory color
+DIR 01;38;5;64
+# 
+LINK 00;38;5;37
+# Couleur pour les FIFOs
+FIFO 00;38;5;136
+# Couleur pour les sockets
+SOCK 01;38;05;125
+# Couleur pour les block device drivers
+BLK 01;38;5;136
+# Couleur pour les character device drivers
+CHR 01;38;5;136
+# Couleur pour les fichiers ayant les permissions d'exécution
+EXEC 00;38;5;160
+
+# Couleur pour les fichiers selon leur extension
+
+# Conf files
+.conf 01;38;5;166
+.json 00;38;5;166
+.ini  00;38;5;166
+.xml  00;38;5;166
+# Script langagues
+.sh   01;38;5;61
+.pl   01;38;5;61
+.php  01;38;5;61
+.py   01;38;5;61
+# Archive / compressed
+.tar  00;38;5;37
+.tgz  00;38;5;37
+.txz  00;38;5;37
+.tbz  00;38;5;37
+.arj  00;38;5;37
+.taz  00;38;5;37
+.lzh  00;38;5;37
+.zip  00;38;5;37
+.gz   00;38;5;37
+.bz2  00;38;5;37
+.lzma 00;38;5;37
+.xz   00;38;5;37
+.rar  00;38;5;37
+# Packages
+.deb  00;38;5;166
+.rpm  00;38;5;166
+# Images
+.jpg  00;38;5;125 
+.JPG  00;38;5;125 
+.jpeg 00;38;5;125 
+.eps  00;38;5;125 
+.gif  00;38;5;125 
+.png  00;38;5;125 
+.bmp  00;38;5;125 
+.xpm  00;38;5;125 
+.tif  00;38;5;125 
+.tiff 00;38;5;125 
+.tga  00;38;5;125 
+.pcx  00;38;5;125 
+.jp2  00;38;5;125 
+# Audio/video
+.avi  00;38;5;64 
+.mkv  00;38;5;64 
+.mpg  00;38;5;64 
+.mov  00;38;5;64 
+.mpeg 00;38;5;64 
+.vob  00;38;5;64 
+.au   00;38;5;64 
+.wav  00;38;5;64 
+.mp3  00;38;5;64 
+.ogg  00;38;5;64 
+.ogm  00;38;5;64 
+.ogv  00;38;5;64 
+.flac 00;38;5;64 
+.wmv  00;38;5;64 
+.wma  00;38;5;64 
+# Office/Misc
+.odg  00;38;5;166 
+.odc  00;38;5;166 
+.ods  00;38;5;166 
+.odp  00;38;5;166 
+.odd  00;38;5;166 
+.doc  00;38;5;166 
+.xls  00;38;5;166 
+.ppt  00;38;5;166 
+.pps  00;38;5;166 
+.tex  00;38;5;166 
+.pdf  00;38;5;166 
+.ps   00;38;5;166 
+.djvu 00;38;5;166 
