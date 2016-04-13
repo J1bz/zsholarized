@@ -31,8 +31,14 @@ If you're still not using oh-my-zsh, you should definitely consider [it](http://
 
 If you're convinced yet :
 
-    ln -s ~/.zsholarized/solarized-via.zsh-theme ~/.oh-my-zsh/themes
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    
+By default this is only available for the curent user. But you can make it global :
 
-Active it in ~/.zshrc or /etc/zshrc :
+    sudo ln -s ~/.zshrc /etc/zsh/zshrc
+
+Then edit properties in ~/.zshrc or /etc/zshrc :
 
     ZSH_THEME="solarized-via"
+    ...
+    ZSH_CUSTOM=/home/you/.zsholarized
